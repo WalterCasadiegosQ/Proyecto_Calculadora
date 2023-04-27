@@ -1,0 +1,32 @@
+#body{
+    background: #8F8F8F;
+}
+
+.container{
+    width: 300px;
+    height: 500px;
+    border: solid 1px #000000;
+    margin: auto;
+    background-color: #62FAA9;
+}
+
+.encabezado{
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    background: ;
+    border: solid 1px  #004F25;
+
+}
+
+.tituloP{
+    text-align: center;
+}
+
+.operando{
+    width: 95%;
+    height: 50px;
+    margin: 5px;
+    text-align: end;
+    font-size: 30px ;
+}
