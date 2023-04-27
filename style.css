@@ -1,5 +1,3 @@
-font-family: 'Poppins', sans-serif;
-
 .fondo{
     background: #f9edd7;
 }
@@ -61,6 +59,7 @@ font-family: 'Poppins', sans-serif;
     margin-left: 2px;
     margin-top: 4px;
     display: inline-block;
+    font-family: Poppins;
 }
 .btnigual{
     width: 60px;
