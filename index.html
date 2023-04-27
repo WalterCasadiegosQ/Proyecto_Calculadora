@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body class="fondo">
     <div class="container">
         <div class="encabezado"> 
-            <h1 class="tituloP">Calculadora</h1>
+            <h1 class="titulop">Calculadora</h1>
         </div>
         <form id="forma">
             <div class="pantalla">
@@ -18,22 +18,22 @@
                 <input id="entrada" type="text" class="operando" placeholder="0" id="operandoA"/>
             </div>
         </form>
-        <div>
-            <button class="btn btn-primary mb-3" onclick="sumar()">+</button>
-            <button class="btn btn-primary mb-3" onclick="restar()">-</button>
-            <button class="btn btn-primary mb-3" onclick="multiplicar()">*</button>
-            <button class="btn btn-primary mb-3" onclick="dividir()">/</button>
-            <button class="btn btn-primary mb-3" onclick="cero()">0</button>
-            <button class="btn btn-primary mb-3" onclick="uno()">1</button>
-            <button class="btn btn-primary mb-3" onclick="dos()">2</button>
-            <button class="btn btn-primary mb-3" onclick="tres()">3</button>
-            <button class="btn btn-primary mb-3" onclick="cuatro()">4</button>
-            <button class="btn btn-primary mb-3" onclick="cinco()">5</button>
-            <button class="btn btn-primary mb-3" onclick="seis()">6</button>
-            <button class="btn btn-primary mb-3" onclick="siete()">7</button>
-            <button class="btn btn-primary mb-3" onclick="ocho()">8</button>
-            <button class="btn btn-primary mb-3" onclick="nueve()">9</button>
-            <button class="btn btn-primary mb-3" onclick="igual()">=</button>
+        <div class="botones">
+            <button class="btn" onclick="sumar()">+</button>
+            <button class="btn" onclick="restar()">-</button>
+            <button class="btn" onclick="multiplicar()">*</button>
+            <button class="btn" onclick="dividir()">/</button>
+            <button class="btn" onclick="cero()">0</button>
+            <button class="btn" onclick="uno()">1</button>
+            <button class="btn" onclick="dos()">2</button>
+            <button class="btn" onclick="tres()">3</button>
+            <button class="btn" onclick="cuatro()">4</button>
+            <button class="btn" onclick="cinco()">5</button>
+            <button class="btn" onclick="seis()">6</button>
+            <button class="btn" onclick="siete()">7</button>
+            <button class="btn" onclick="ocho()">8</button>
+            <button class="btn" onclick="nueve()">9</button>
+            <button class="btn" onclick="igual()">=</button>
 
         </div>
         <div id="resultado"></div>
