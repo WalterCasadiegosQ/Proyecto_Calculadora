@@ -66,6 +66,7 @@ function nueve(){
     input.value= input.value+"9";
 }
 
+
 function igual(){
     const input = document.getElementById("entrada");
     var operacion = input.value;

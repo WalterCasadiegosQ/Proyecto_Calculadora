@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Aplicacion Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
 
   <body class="fondo">
@@ -19,24 +20,28 @@
             </div>
         </form>
         <div class="botones">
-            <button class="btn" onclick="sumar()">+</button>
-            <button class="btn" onclick="restar()">-</button>
-            <button class="btn" onclick="multiplicar()">*</button>
-            <button class="btn" onclick="dividir()">/</button>
-            <button class="btn" onclick="cero()">0</button>
-            <button class="btn" onclick="uno()">1</button>
-            <button class="btn" onclick="dos()">2</button>
-            <button class="btn" onclick="tres()">3</button>
-            <button class="btn" onclick="cuatro()">4</button>
-            <button class="btn" onclick="cinco()">5</button>
-            <button class="btn" onclick="seis()">6</button>
-            <button class="btn" onclick="siete()">7</button>
-            <button class="btn" onclick="ocho()">8</button>
-            <button class="btn" onclick="nueve()">9</button>
-            <button class="btn" onclick="igual()">=</button>
 
+            <section class="operandos">
+                <button class="btn" onclick="sumar()">+</button>
+                <button class="btn" onclick="restar()">-</button>
+                <button class="btn" onclick="multiplicar()">*</button>
+                <button class="btn" onclick="dividir()">/</button>
+            </section>
+            <section class="number">
+                <button class="btn" onclick="cero()">0</button>
+                <button class="btn" onclick="uno()">1</button>
+                <button class="btn" onclick="dos()">2</button>
+                <button class="btn" onclick="tres()">3</button>
+                <button class="btn" onclick="cuatro()">4</button>
+                <button class="btn" onclick="cinco()">5</button>
+                <button class="btn" onclick="seis()">6</button>
+                <button class="btn" onclick="siete()">7</button>
+                <button class="btnigual" onclick="limpiar()">C</button>
+                <button class="btn" onclick="ocho()">8</button>
+                <button class="btn" onclick="nueve()">9</button>
+            </section>
+            <button class="btnigual" onclick="igual()">=</button>
         </div>
-        <div id="resultado"></div>
     </div>
 
     <script src="js/app.js"></script>

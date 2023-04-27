@@ -1,14 +1,17 @@
+font-family: 'Poppins', sans-serif;
+
 .fondo{
     background: #f9edd7;
 }
 
 .container{
     width: 300px;
-    height: 450px;
+    height: 445px;
     border-radius: solid 1px #000000;
     border-radius: 15px;
     margin: auto;
     background-color: #afb6b4;
+    box-shadow:  2px 2px 2px #c9caca, -2px -2px 2px #c9caca;
 }
 
 .encabezado{
@@ -22,8 +25,13 @@
 
 .titulop{
     text-align: center;
-    margin-top: 100px;
     padding-top: 15px;
+    font-family: Poppins;
+}
+
+.titulop:hover{
+    font-size: 33px;
+    transition: 0.5s;
 }
 
 .operando{
@@ -38,13 +46,29 @@
 }
 
 .botones{
-    height: 250px;
+    height: 260px;
     width: 260px;
     margin: 20px;
 }
 
+.number{
+    display: inline;
+}
+
 .btn{
-    width: 20%;
-    height: 25%;
-    border:outset;
+    width: 60px;
+    height: 60px;
+    margin-left: 2px;
+    margin-top: 4px;
+    display: inline-block;
+}
+.btnigual{
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin-left: 2px;
+    display: inline-block;
+    background: #7b818b;
+    color: #ffffff; 
+
 }
