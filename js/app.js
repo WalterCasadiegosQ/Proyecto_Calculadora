@@ -1,80 +1,30 @@
 console.log("FUNCIONANDO");
 
-function generico(){
+function signo(signo){
     var input = document.getElementById("entrada");
-    input.value= input.value+"+";
+    var operacion = input.value;
+    console.log(operacion[operacion.length-1]);
+    if(operacion[operacion.length-1]!=="+" && operacion[operacion.length-1]!=='-'
+     && operacion[operacion.length-1]!=="*" && operacion[operacion.length-1]!=="/"
+     && operacion[operacion.length-1]!==undefined){
+        input.value= input.value+signo;
+    }
 }
 
-function sumar(){
+function generico(entrada){
     var input = document.getElementById("entrada");
-    input.value= input.value+"+";
+    input.value= input.value+entrada;
 }
 
-function restar(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"-";
-}
-
-function multiplicar(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"*";
-}
-
-function dividir(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"/";
-}
-
-function cero(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"0";
-}
-function uno(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"1";
-}
-function dos(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"2";
-}
-function tres(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"3";
-}
-function cuatro(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"4";
-}
-function cinco(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"5";
-}
-function seis(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"6";
-}
-function siete(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"7";
-}
-function ocho(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"8";
-}
-function nueve(){
-    var input = document.getElementById("entrada");
-    input.value= input.value+"9";
-}
-
-
-function igual(){
-    const input = document.getElementById("entrada");
+var resultado =0;
+function igual(input){
     var operacion = input.value;
     console.log(operacion)
     var a = "";
     var b = "";
     var accion="";
     var cambio=0;
+    console.log(operacion.length);
     for(let i=0; i<operacion.length; i++){
           
         if(operacion[i]==="+"){
@@ -93,12 +43,24 @@ function igual(){
         else{
             if(cambio==0){
                 a =a + operacion[i]; 
+                console.log(operacion[i])
             }else{
-                b =b + operacion[i]; 
+                b =b + operacion[i];
+                console.log(operacion[i]);
+                console.log(operacion[i+1+"pusible nan"]);
+                if(operacion[i+1]==="+" || operacion[operacion.length+1]==='-'
+                || operacion[operacion.length+1]==="*" || operacion[operacion.length+1]==="/"
+               ){
+                    console.log("entro");
+                    console.log(operacion[i+1]);
+                    resultado=igual();
+                    break
+                    
+                } 
             }
         }
     }
-    var resultado =0;
+    
 
     if(accion==="+"){
         resultado = parseInt(a) + parseInt(b)
@@ -114,5 +76,17 @@ function igual(){
     }
 
     console.log(resultado)
-        input.value= resultado.toString();
+    input.value= resultado.toString();
+
+    return resultado;
+}
+
+function solucion(a, b, accion){
+
+}
+
+
+function limpiar(){
+    var input = document.getElementById("entrada");
+    input.value= "";
 }

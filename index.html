@@ -22,25 +22,25 @@
         <div class="botones">
 
             <section class="operandos">
-                <button class="btn" onclick="sumar()">+</button>
-                <button class="btn" onclick="restar()">-</button>
-                <button class="btn" onclick="multiplicar()">*</button>
-                <button class="btn" onclick="dividir()">/</button>
+                <button class="btn" onclick="signo('+')">+</button>
+                <button class="btn" onclick="signo('-')">-</button>
+                <button class="btn" onclick="signo('*')">*</button>
+                <button class="btn" onclick="signo('/')">/</button>
             </section>
             <section class="number">
-                <button class="btn" onclick="cero()">0</button>
-                <button class="btn" onclick="uno()">1</button>
-                <button class="btn" onclick="dos()">2</button>
-                <button class="btn" onclick="tres()">3</button>
-                <button class="btn" onclick="cuatro()">4</button>
-                <button class="btn" onclick="cinco()">5</button>
-                <button class="btn" onclick="seis()">6</button>
-                <button class="btn" onclick="siete()">7</button>
+                <button class="btn" onclick="generico('0')">0</button>
+                <button class="btn" onclick="generico('1')">1</button>
+                <button class="btn" onclick="generico('2')">2</button>
+                <button class="btn" onclick="generico('3')">3</button>
+                <button class="btn" onclick="generico('4')">4</button>
+                <button class="btn" onclick="generico('5')">5</button>
+                <button class="btn" onclick="generico('6')">6</button>
+                <button class="btn" onclick="generico('7')">7</button>
                 <button class="btnigual" onclick="limpiar()">C</button>
-                <button class="btn" onclick="ocho()">8</button>
-                <button class="btn" onclick="nueve()">9</button>
+                <button class="btn" onclick="generico('8')">8</button>
+                <button class="btn" onclick="generico('9')">9</button>
             </section>
-            <button class="btnigual" onclick="igual()">=</button>
+            <button class="btnigual" onclick="igual(this)">=</button>
         </div>
     </div>
 
